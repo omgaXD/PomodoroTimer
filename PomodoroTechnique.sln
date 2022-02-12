@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomodoroTechnique", "PomodoroTechnique\PomodoroTechnique.csproj", "{7A2755A9-7783-452A-B62C-408C6CD5E195}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupPomodoroTimer", "SetupPomodoroTimer\SetupPomodoroTimer.vdproj", "{6D8F6EEE-E157-4079-9732-520B949F7387}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A2755A9-7783-452A-B62C-408C6CD5E195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2755A9-7783-452A-B62C-408C6CD5E195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2755A9-7783-452A-B62C-408C6CD5E195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2755A9-7783-452A-B62C-408C6CD5E195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D8F6EEE-E157-4079-9732-520B949F7387}.Debug|Any CPU.ActiveCfg = Debug
+		{6D8F6EEE-E157-4079-9732-520B949F7387}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F430498C-A850-4393-B5D4-A0C50BB4F64C}
+	EndGlobalSection
+EndGlobal
