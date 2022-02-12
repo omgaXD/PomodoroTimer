@@ -212,6 +212,14 @@ namespace PomodoroTechnique
         {
             if (saveFileDialog1.FileName != "")
             {
+                string savePath;
+                if (melodyPath == Directory.GetCurrentDirectory() + @"\" + DefSongPathname)
+                {
+                    savePath = "";
+                } else
+                {
+                    savePath = melodyPath;
+                }
                 var obj = new PomodoroTimerSettings(activities, melodyPath);
                 string json = JsonSerializer.Serialize(obj);
                 File.WriteAllText(saveFileDialog1.FileName, json);
@@ -225,8 +233,15 @@ namespace PomodoroTechnique
 
             var load = JsonSerializer.Deserialize<PomodoroTimerSettings>(fs);
             activities = load.activities;
-            melodyPath = load.melodyPath;
-            melodyPathTextBox.Text = melodyPath;
+            if (load.melodyPath != null)
+            {
+                melodyPath = load.melodyPath;
+                melodyPathTextBox.Text = melodyPath;
+            } else
+            {
+                melody = null;
+                SetDefaultSongUp();
+            }
             try
             {
                 melody = new SoundManager(melodyPath);
