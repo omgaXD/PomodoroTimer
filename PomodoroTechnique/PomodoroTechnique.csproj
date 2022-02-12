@@ -98,8 +98,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SoundManager.cs" />
+    <EmbeddedResource Include="PomodoroSetup.en-US.resx">
+      <DependentUpon>PomodoroSetup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PomodoroSetup.resx">
       <DependentUpon>PomodoroSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PomodoroSetup.ru.resx">
+      <DependentUpon>PomodoroSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PomodoroTimer.en-US.resx">
+      <DependentUpon>PomodoroTimer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PomodoroTimer.resx">
       <DependentUpon>PomodoroTimer.cs</DependentUpon>

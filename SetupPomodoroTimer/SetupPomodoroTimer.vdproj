@@ -866,15 +866,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Pomodoro Timer"
-        "ProductCode" = "8:{5F25BCCC-5931-486F-817C-B32D8E7A1292}"
-        "PackageCode" = "8:{1A8EBDD2-B184-4FE2-B817-62F0F0A5D343}"
+        "ProductCode" = "8:{6F43C6E9-45D3-4E18-A8A5-629E5D7F0685}"
+        "PackageCode" = "8:{38CB0849-E0FF-4287-802D-759ECB024167}"
         "UpgradeCode" = "8:{1AE7BB4D-1F79-4DCE-9DC2-93E3BBBDB7D3}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.2"
+        "ProductVersion" = "8:1.0.3"
         "Manufacturer" = "8:omga"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -1402,7 +1402,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9CAF2080DD364D898C42FAF0C6B52AE4"
             {
-            "SourcePath" = "8:..\\PomodoroTechnique\\obj\\Release\\PomodoroTechnique.exe"
+            "SourcePath" = "8:..\\PomodoroTechnique\\obj\\Debug\\PomodoroTechnique.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A7B7FA3503464F87A2CDE0AC6A0D0205"
