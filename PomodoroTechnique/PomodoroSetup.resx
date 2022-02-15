@@ -134,14 +134,11 @@
   <data name="&gt;&gt;exportButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="exportButton.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
   <data name="&gt;&gt;startButton.Name" xml:space="preserve">
     <value>startButton</value>
   </data>
-  <data name="&gt;&gt;exportButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="timerPeriodsBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 19</value>
   </data>
   <data name="&gt;&gt;removeButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -191,14 +188,11 @@
   <data name="&gt;&gt;timeNumeric.Name" xml:space="preserve">
     <value>timeNumeric</value>
   </data>
-  <data name="RBrunOnce.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 330</value>
+  <data name="importButton.Text" xml:space="preserve">
+    <value>Импорт настроек</value>
   </data>
   <data name="labelMelody.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
-  </data>
-  <data name="labelMelody.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="exportButton.Text" xml:space="preserve">
     <value>Экспорт настроек</value>
@@ -266,8 +260,8 @@
   <data name="&gt;&gt;upButton.Name" xml:space="preserve">
     <value>upButton</value>
   </data>
-  <data name="timerPeriodsBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 19</value>
+  <data name="&gt;&gt;importMusicButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="upButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 23</value>
@@ -287,14 +281,17 @@
   <data name="RBrepeatInfinitely.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 17</value>
   </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;importButton.Name" xml:space="preserve">
     <value>importButton</value>
   </data>
   <data name="&gt;&gt;addButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;addButton.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;upButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;openMelodyDialog.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -311,8 +308,8 @@
   <data name="RBrepeatN.Text" xml:space="preserve">
     <value>Повторить                    раз</value>
   </data>
-  <data name="importButton.Text" xml:space="preserve">
-    <value>Импорт настроек</value>
+  <data name="&gt;&gt;RBrepeatInfinitely.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 174</value>
@@ -341,6 +338,9 @@
   <data name="&gt;&gt;melodyPathTextBox.Name" xml:space="preserve">
     <value>melodyPathTextBox</value>
   </data>
+  <data name="removeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 133</value>
+  </data>
   <data name="openMelodyDialog.Title" xml:space="preserve">
     <value>Выбрать мелодию</value>
   </data>
@@ -356,14 +356,14 @@
   <data name="startButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 405</value>
   </data>
+  <data name="addButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 23</value>
+  </data>
   <data name="removeButton.Text" xml:space="preserve">
     <value>Удалить</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Pomodoro Timer</value>
-  </data>
-  <data name="&gt;&gt;runTimerCount.Name" xml:space="preserve">
-    <value>runTimerCount</value>
   </data>
   <data name="&gt;&gt;labelMelody.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -371,8 +371,8 @@
   <data name="runTimerCount.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
   </data>
-  <data name="&gt;&gt;importMusicButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="RBrunOnce.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 330</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Настройки таймера</value>
@@ -386,8 +386,8 @@
   <data name="RBrunOnce.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="RBrepeatInfinitely.Text" xml:space="preserve">
-    <value>Повторять таймер бесконечно</value>
+  <data name="exportButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>300, 477</value>
@@ -395,11 +395,8 @@
   <data name="&gt;&gt;runTimerCount.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="startButton.Text" xml:space="preserve">
-    <value>Начать таймер</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="RBrepeatN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 17</value>
   </data>
   <data name="timeNumeric.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -419,8 +416,8 @@
   <data name="nameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="RBrunOnce.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 17</value>
+  <data name="&gt;&gt;importMusicButton.Name" xml:space="preserve">
+    <value>importMusicButton</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -434,8 +431,8 @@
   <data name="removeButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;upButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="RBrepeatInfinitely.Text" xml:space="preserve">
+    <value>Повторять таймер бесконечно</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -467,9 +464,6 @@
   <data name="&gt;&gt;nameTextBox.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="RBrepeatN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 17</value>
-  </data>
   <data name="&gt;&gt;runTimerCount.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -479,8 +473,8 @@
   <data name="&gt;&gt;nameTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RBrepeatInfinitely.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="labelMelody.Text" xml:space="preserve">
+    <value>Мелодия:</value>
   </data>
   <data name="downButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>204, 133</value>
@@ -499,6 +493,9 @@
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
+  </data>
+  <data name="&gt;&gt;exportButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="upButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 133</value>
@@ -544,6 +541,9 @@
   </data>
   <data name="&gt;&gt;addButton.Name" xml:space="preserve">
     <value>addButton</value>
+  </data>
+  <data name="&gt;&gt;importButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -853,8 +853,8 @@
   <data name="openMelodyDialog.Filter" xml:space="preserve">
     <value>MP3 Файлы|*.mp3|WAVE Файлы|*.wav</value>
   </data>
-  <data name="addButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 23</value>
+  <data name="RBrunOnce.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 17</value>
   </data>
   <data name="startButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 23</value>
@@ -862,8 +862,8 @@
   <data name="importMusicButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>186, 242</value>
   </data>
-  <data name="labelMelody.Text" xml:space="preserve">
-    <value>Мелодия:</value>
+  <data name="startButton.Text" xml:space="preserve">
+    <value>Начать таймер</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Время (мин.):</value>
@@ -901,8 +901,8 @@
   <data name="&gt;&gt;upButton.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;importMusicButton.Name" xml:space="preserve">
-    <value>importMusicButton</value>
+  <data name="&gt;&gt;runTimerCount.Name" xml:space="preserve">
+    <value>runTimerCount</value>
   </data>
   <data name="&gt;&gt;labelMelody.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -916,8 +916,8 @@
   <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="removeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 133</value>
+  <data name="&gt;&gt;addButton.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;exportButton.Name" xml:space="preserve">
     <value>exportButton</value>
@@ -946,12 +946,9 @@
   <data name="&gt;&gt;downButton.Name" xml:space="preserve">
     <value>downButton</value>
   </data>
-  <data name="&gt;&gt;importButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelMelody.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en-US</value>
-  </metadata>
   <metadata name="groupBox2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>

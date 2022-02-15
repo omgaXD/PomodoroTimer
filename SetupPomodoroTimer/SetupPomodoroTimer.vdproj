@@ -75,12 +75,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_251925C1ED2E490FA2B69F985FF6BC1A"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_39A72E52551990D736DEFC1AD88F033B"
         "OwnerKey" = "8:_9CAF2080DD364D898C42FAF0C6B52AE4"
         "MsmSig" = "8:_UNDEFINED"
@@ -125,6 +119,12 @@
         {
         "MsmKey" = "8:_47D1D1FBF794FB8F71380A59E85B0DE6"
         "OwnerKey" = "8:_39A72E52551990D736DEFC1AD88F033B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_606E3A86482642B785CDF4841D0AD534"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -533,26 +533,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_251925C1ED2E490FA2B69F985FF6BC1A"
-            {
-            "SourcePath" = "8:..\\PomodoroTechnique\\CrystalPomodoro.mp3"
-            "TargetName" = "8:CrystalPomodoro.mp3"
-            "Tag" = "8:"
-            "Folder" = "8:_A7B7FA3503464F87A2CDE0AC6A0D0205"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_39A72E52551990D736DEFC1AD88F033B"
             {
             "AssemblyRegister" = "3:1"
@@ -613,6 +593,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_606E3A86482642B785CDF4841D0AD534"
+            {
+            "SourcePath" = "8:..\\PomodoroTechnique\\CrystalPomodoro.wav"
+            "TargetName" = "8:CrystalPomodoro.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_A7B7FA3503464F87A2CDE0AC6A0D0205"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_654287396A4F7A255A27403359A4102E"
@@ -866,15 +866,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Pomodoro Timer"
-        "ProductCode" = "8:{6F43C6E9-45D3-4E18-A8A5-629E5D7F0685}"
-        "PackageCode" = "8:{38CB0849-E0FF-4287-802D-759ECB024167}"
+        "ProductCode" = "8:{3F8FA553-ED02-4FD6-A86A-2BE611377357}"
+        "PackageCode" = "8:{AD2AA769-487B-45BD-9839-77552CD82B11}"
         "UpgradeCode" = "8:{1AE7BB4D-1F79-4DCE-9DC2-93E3BBBDB7D3}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.3"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:omga"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -1402,7 +1402,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9CAF2080DD364D898C42FAF0C6B52AE4"
             {
-            "SourcePath" = "8:..\\PomodoroTechnique\\obj\\Debug\\PomodoroTechnique.exe"
+            "SourcePath" = "8:..\\PomodoroTechnique\\obj\\Release\\PomodoroTechnique.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A7B7FA3503464F87A2CDE0AC6A0D0205"

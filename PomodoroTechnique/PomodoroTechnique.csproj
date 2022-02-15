@@ -137,7 +137,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CrystalPomodoro.mp3">
+    <Content Include="CrystalPomodoro.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="tomato.ico">

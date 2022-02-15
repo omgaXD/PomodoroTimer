@@ -17,7 +17,7 @@ namespace PomodoroTechnique
             new Activity("Работа", 25),
             new Activity("Отдых", 5)
         };
-        private readonly string DefSongPathname = "CrystalPomodoro.mp3";
+        private readonly string DefSongPathname = "CrystalPomodoro.wav";
         private readonly string DefSongName = "По умолчанию (vzizbek - Crystal Pomodoro)";
         public PomodoroSetup()
         {
@@ -32,7 +32,7 @@ namespace PomodoroTechnique
 
                 string path = Directory.GetCurrentDirectory() + @"\" + DefSongPathname;
                 melodyPathTextBox.Text = DefSongName;
-                melody = new SoundManager(path);
+                TrySetSoundManager(path);
             }
         }
 
@@ -242,18 +242,26 @@ namespace PomodoroTechnique
                 melody = null;
                 SetDefaultSongUp();
             }
-            try
-            {
-                melody = new SoundManager(melodyPath);
-            } catch (Exception)
-            {
-                melody = null;
-            }
+            TrySetSoundManager(melodyPath);
             UpdateListBox(-1);
             fs.Close();
             fs.Dispose();
         }
-
+        private void TrySetSoundManager(string url)
+        {
+            try
+            {
+                melody = new SoundManagerWMP(url);
+            }
+            catch (PlatformNotSupportedException ex)
+            {
+                melody = new SoundManagerSP(url);
+            }
+            catch (Exception ex)
+            {
+                melody = null;
+            }
+        }
         private void importMusicButton_Click(object sender, EventArgs e)
         {
             openMelodyDialog.ShowDialog(this);
@@ -264,7 +272,7 @@ namespace PomodoroTechnique
         {
             melodyPathTextBox.Text = melodyPath = openMelodyDialog.FileName;
             melodyPathTextBox.Select(melodyPathTextBox.TextLength - 1, 0);
-            melody = new SoundManager(melodyPath);
+            TrySetSoundManager(melodyPath);
         }
         
         [Serializable]

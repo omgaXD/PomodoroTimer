@@ -14,7 +14,7 @@ namespace PomodoroTechnique
         private int secondsSinceStart;
 
         private int repeatTimes;
-
+        
         List<Activity> activities = new List<Activity>();
 
         Activity curActivity;
