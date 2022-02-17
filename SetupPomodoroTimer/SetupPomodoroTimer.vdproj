@@ -171,6 +171,24 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B93F5B7E6C4C41FB972656076E79C4C7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C4C92C9DFE364BAA860A8708B6500966"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C6272732A67C4DCDA070A46D6D8EED2F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_C9B363B9793542A881CBD950682A9168"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -179,6 +197,12 @@
         {
         "MsmKey" = "8:_DA2F371A7C3486102025CFAACB3F3F5A"
         "OwnerKey" = "8:_9CAF2080DD364D898C42FAF0C6B52AE4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DDFBD0EC59B94A03BB713A15A91CE0D5"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -708,6 +732,66 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B93F5B7E6C4C41FB972656076E79C4C7"
+            {
+            "SourcePath" = "8:..\\PomodoroTechnique\\Resources\\Resource.Designer.cs"
+            "TargetName" = "8:Resource.Designer.cs"
+            "Tag" = "8:"
+            "Folder" = "8:_F14ABDF0DD6044478F1458619C4F96B9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C4C92C9DFE364BAA860A8708B6500966"
+            {
+            "SourcePath" = "8:..\\PomodoroTechnique\\Resources\\Resource.resx"
+            "TargetName" = "8:Resource.resx"
+            "Tag" = "8:"
+            "Folder" = "8:_F14ABDF0DD6044478F1458619C4F96B9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C6272732A67C4DCDA070A46D6D8EED2F"
+            {
+            "SourcePath" = "8:..\\PomodoroTechnique\\Resources\\Resource.ru.resx"
+            "TargetName" = "8:Resource.ru.resx"
+            "Tag" = "8:"
+            "Folder" = "8:_F14ABDF0DD6044478F1458619C4F96B9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C9B363B9793542A881CBD950682A9168"
             {
             "SourcePath" = "8:..\\PomodoroTechnique\\tomato.ico"
@@ -757,6 +841,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DDFBD0EC59B94A03BB713A15A91CE0D5"
+            {
+            "SourcePath" = "8:..\\PomodoroTechnique\\Resources\\Resource.en-US.resx"
+            "TargetName" = "8:Resource.en-US.resx"
+            "Tag" = "8:"
+            "Folder" = "8:_F14ABDF0DD6044478F1458619C4F96B9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E437C48F1FDFA8FC68B8B01069447B35"
@@ -837,6 +941,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_F14ABDF0DD6044478F1458619C4F96B9"
+                    {
+                    "Name" = "8:Resources"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_599601741E78468C8C002A0CF288856B"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_DC8212545B2145D5B8C61F4E132AEF71"
@@ -866,15 +981,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Pomodoro Timer"
-        "ProductCode" = "8:{3F8FA553-ED02-4FD6-A86A-2BE611377357}"
-        "PackageCode" = "8:{AD2AA769-487B-45BD-9839-77552CD82B11}"
+        "ProductCode" = "8:{BE531BAB-FD23-466E-82C5-E50F88996368}"
+        "PackageCode" = "8:{404556DD-465C-4C9A-970D-3E0E58ED4686}"
         "UpgradeCode" = "8:{1AE7BB4D-1F79-4DCE-9DC2-93E3BBBDB7D3}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.5"
+        "ProductVersion" = "8:1.0.11"
         "Manufacturer" = "8:omga"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -1400,6 +1515,34 @@
         }
         "ProjectOutput"
         {
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_34701A525E154F1D9CA6E85A5D858655"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_A7B7FA3503464F87A2CDE0AC6A0D0205"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
+            "OutputProjectGuid" = "8:{7A2755A9-7783-452A-B62C-408C6CD5E195}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9CAF2080DD364D898C42FAF0C6B52AE4"
             {
             "SourcePath" = "8:..\\PomodoroTechnique\\obj\\Release\\PomodoroTechnique.exe"

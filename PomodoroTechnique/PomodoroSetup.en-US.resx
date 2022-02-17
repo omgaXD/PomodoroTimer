@@ -127,12 +127,6 @@
   <data name="importMusicButton.Text" xml:space="preserve">
     <value>Select</value>
   </data>
-  <data name="exportButton.Text" xml:space="preserve">
-    <value>Export settings</value>
-  </data>
-  <data name="importButton.Text" xml:space="preserve">
-    <value>Import settings</value>
-  </data>
   <data name="addButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
@@ -171,6 +165,36 @@
   </data>
   <data name="RBrepeatInfinitely.Text" xml:space="preserve">
     <value>Repeat timer infinitely</value>
+  </data>
+  <data name="importButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="importButton.Text" xml:space="preserve">
+    <value>Import settings</value>
+  </data>
+  <data name="exportButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="exportButton.Text" xml:space="preserve">
+    <value>Export settings</value>
+  </data>
+  <data name="fileTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="fileTab.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="rusLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="enLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="languageTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="languageTab.Text" xml:space="preserve">
+    <value>Language</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

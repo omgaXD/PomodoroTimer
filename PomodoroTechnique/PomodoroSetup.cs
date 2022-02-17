@@ -7,22 +7,80 @@ using System.Windows.Forms;
 using System.Text.Json;
 using System.Media;
 using System.Text.Json.Serialization;
+using System.Globalization;
+using System.Threading;
+using System.Resources;
+using System.Reflection;
+using PomodoroTechnique.Resources;
 
 namespace PomodoroTechnique
 {
     public partial class PomodoroSetup : Form
     {
-        List<Activity> activities = new List<Activity>()
+
+        string lang = "en_US";
+        string defWorkString = "Работа";
+        string newTimer = "Новый таймер";
+        string defRestString = "Отдых";
+        string minIndString = "мин.";
+        string byDefault = "По умолчанию";
+        bool changedActivity = false;
+        private void ChangeLanguage(string lang)
         {
-            new Activity("Работа", 25),
-            new Activity("Отдых", 5)
-        };
+            this.lang = lang;
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(PomodoroSetup));
+            ResourceManager textResources = Resource.ResourceManager;
+            CultureInfo cultureInfo = new CultureInfo(lang);
+            foreach (Control c in this.Controls)
+            {
+                resources.ApplyResources(c, c.Name, cultureInfo);
+            }
+            foreach (Control c in groupBox2.Controls)
+            {  
+                resources.ApplyResources(c, c.Name, cultureInfo);
+            }
+            
+            defWorkString = textResources.GetString("defWorkString", cultureInfo);
+            defRestString = textResources.GetString("defRestString", cultureInfo);
+            minIndString = textResources.GetString("minIndString", cultureInfo);
+            newTimer = textResources.GetString("newTimer", cultureInfo);
+            byDefault = textResources.GetString("byDefault", cultureInfo);
+
+            DefSongName = byDefault + " (vzizbek - Crystal Pomodoro)";
+            if (melodyPath == null)
+            {
+                melodyPathTextBox.Text = DefSongName;
+            }
+            if (!changedActivity)
+            {
+                DefaultActivities();
+            }
+            UpdateListBox(timerPeriodsBox.SelectedIndex);
+
+        }
+
+
+        private void DefaultActivities()
+        {
+        
+            activities = new List<Activity>()
+            {
+            new Activity(defWorkString, 25),
+            new Activity(defRestString, 5)
+            };
+            UpdateListBox(-1);
+        }
+
+        List<Activity> activities = new List<Activity>();
+
         private readonly string DefSongPathname = "CrystalPomodoro.wav";
-        private readonly string DefSongName = "По умолчанию (vzizbek - Crystal Pomodoro)";
+        private string DefSongName = "(vzizbek - Crystal Pomodoro)";
         public PomodoroSetup()
         {
             InitializeComponent();
             UpdateListBox(-1);
+            //ChangeLanguage(lang);
+            DefaultActivities();
             SetDefaultSongUp();
         }
         private void SetDefaultSongUp()
@@ -44,7 +102,7 @@ namespace PomodoroTechnique
         private void StartTimer()
         {
             SetDefaultSongUp();
-            PomodoroTimer form = new PomodoroTimer(activities.ToList(), repeat, melody);
+            PomodoroTimer form = new PomodoroTimer(activities.ToList(), repeat, melody, lang);
             Hide();
             form.Show(this);
         }
@@ -58,11 +116,22 @@ namespace PomodoroTechnique
                 a.index = i + 1;
                 activities[i] = a;
             }
-            activities.ForEach(act => timerPeriodsBox.Items.Add(act.index.ToString() + ". " + act.name + " | " + act.length.ToString() + " мин."));
+            activities.ForEach(act => timerPeriodsBox.Items.Add(act.index.ToString() + ". " + act.name + " | " + act.length.ToString() + " " + minIndString));
             timerPeriodsBox.SelectedIndex = Math.Min(focusIndex, timerPeriodsBox.Items.Count);
-
+            if (timerPeriodsBox.SelectedIndex == -1)
+            {
+                timeNumeric.Enabled = false;
+                timeNumeric.Value = 1;
+                nameTextBox.Enabled = false;
+                nameTextBox.Text = "";
+            }
+            else
+            {
+                timeNumeric.Enabled = true;
+                nameTextBox.Enabled = true;
+            }
         }
-
+        
         private void nameTextBox_TextChanged(object sender, EventArgs e)
         {
             var i = timerPeriodsBox.SelectedIndex;
@@ -74,6 +143,7 @@ namespace PomodoroTechnique
             a.name = nameTextBox.Text;
             activities[i] = a;
             UpdateListBox(i);
+            changedActivity = true;
         }
 
         private void timeNumeric_ValueChanged(object sender, EventArgs e)
@@ -87,6 +157,7 @@ namespace PomodoroTechnique
             a.length = (int)timeNumeric.Value;
             activities[i] = a;
             UpdateListBox(i);
+            changedActivity = true;
         }
 
         private void timerPeriodsBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -98,6 +169,7 @@ namespace PomodoroTechnique
             }
             timeNumeric.Value = activities[i].length;
             nameTextBox.Text = activities[i].name;
+            changedActivity = true;
         }
 
         private void upButton_Click(object sender, EventArgs e)
@@ -115,6 +187,7 @@ namespace PomodoroTechnique
             activities.RemoveAt(i);
             activities.Insert(i - 1, item);
             UpdateListBox(i - 1);
+            changedActivity = true;
         }
 
         private void downButton_Click(object sender, EventArgs e)
@@ -132,6 +205,7 @@ namespace PomodoroTechnique
             activities.RemoveAt(i);
             activities.Insert(i + 1, item);
             UpdateListBox(i + 1);
+            changedActivity = true;
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -140,14 +214,14 @@ namespace PomodoroTechnique
             var i = timerPeriodsBox.SelectedIndex;
             if (i != -1)
             {
-                activities.Insert(i + 1, new Activity("Новый Таймер", 1));
+                activities.Insert(i + 1, new Activity(newTimer, 1));
                 UpdateListBox(i + 1);
             } else
             {
-                activities.Add(new Activity("Новый Таймер", 1));
+                activities.Add(new Activity(newTimer, 1));
                 UpdateListBox(activities.Count - 1);
             }
-            
+            changedActivity = true;
         }
 
         private void removeButton_Click(object sender, EventArgs e)
@@ -159,6 +233,7 @@ namespace PomodoroTechnique
             }
             activities.RemoveAt(i);
             UpdateListBox(i-1);
+            changedActivity = true;
         }
         private int repeat;
 
@@ -286,6 +361,16 @@ namespace PomodoroTechnique
                 this.activities = activities;
                 this.melodyPath = melodyPath;
             }
+        }
+
+        private void rusLang_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("ru");
+        }
+
+        private void enLang_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("en-US");
         }
     }
 }

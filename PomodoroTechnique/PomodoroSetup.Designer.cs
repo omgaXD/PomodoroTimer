@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.GroupBox groupBox2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PomodoroSetup));
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelMelody = new System.Windows.Forms.Label();
             this.melodyPathTextBox = new System.Windows.Forms.TextBox();
             this.importMusicButton = new System.Windows.Forms.Button();
-            this.exportButton = new System.Windows.Forms.Button();
-            this.importButton = new System.Windows.Forms.Button();
             this.timerPeriodsBox = new System.Windows.Forms.ListBox();
             this.timeNumeric = new System.Windows.Forms.NumericUpDown();
             this.addButton = new System.Windows.Forms.Button();
@@ -52,31 +50,36 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openMelodyDialog = new System.Windows.Forms.OpenFileDialog();
-            groupBox2 = new System.Windows.Forms.GroupBox();
-            groupBox2.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileTab = new System.Windows.Forms.ToolStripMenuItem();
+            this.importButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageTab = new System.Windows.Forms.ToolStripMenuItem();
+            this.rusLang = new System.Windows.Forms.ToolStripMenuItem();
+            this.enLang = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timeNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.runTimerCount)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            resources.ApplyResources(groupBox2, "groupBox2");
-            groupBox2.Controls.Add(this.labelMelody);
-            groupBox2.Controls.Add(this.melodyPathTextBox);
-            groupBox2.Controls.Add(this.importMusicButton);
-            groupBox2.Controls.Add(this.exportButton);
-            groupBox2.Controls.Add(this.importButton);
-            groupBox2.Controls.Add(this.timerPeriodsBox);
-            groupBox2.Controls.Add(this.timeNumeric);
-            groupBox2.Controls.Add(this.addButton);
-            groupBox2.Controls.Add(this.label2);
-            groupBox2.Controls.Add(this.removeButton);
-            groupBox2.Controls.Add(this.label1);
-            groupBox2.Controls.Add(this.nameTextBox);
-            groupBox2.Controls.Add(this.upButton);
-            groupBox2.Controls.Add(this.downButton);
-            groupBox2.Name = "groupBox2";
-            groupBox2.TabStop = false;
+            this.groupBox2.Controls.Add(this.labelMelody);
+            this.groupBox2.Controls.Add(this.melodyPathTextBox);
+            this.groupBox2.Controls.Add(this.importMusicButton);
+            this.groupBox2.Controls.Add(this.timerPeriodsBox);
+            this.groupBox2.Controls.Add(this.timeNumeric);
+            this.groupBox2.Controls.Add(this.addButton);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.removeButton);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.nameTextBox);
+            this.groupBox2.Controls.Add(this.upButton);
+            this.groupBox2.Controls.Add(this.downButton);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
             // 
             // labelMelody
             // 
@@ -96,24 +99,10 @@
             this.importMusicButton.UseVisualStyleBackColor = true;
             this.importMusicButton.Click += new System.EventHandler(this.importMusicButton_Click);
             // 
-            // exportButton
-            // 
-            resources.ApplyResources(this.exportButton, "exportButton");
-            this.exportButton.Name = "exportButton";
-            this.exportButton.UseVisualStyleBackColor = true;
-            this.exportButton.Click += new System.EventHandler(this.exportButton_Click);
-            // 
-            // importButton
-            // 
-            resources.ApplyResources(this.importButton, "importButton");
-            this.importButton.Name = "importButton";
-            this.importButton.UseVisualStyleBackColor = true;
-            this.importButton.Click += new System.EventHandler(this.importButton_Click);
-            // 
             // timerPeriodsBox
             // 
-            resources.ApplyResources(this.timerPeriodsBox, "timerPeriodsBox");
             this.timerPeriodsBox.FormattingEnabled = true;
+            resources.ApplyResources(this.timerPeriodsBox, "timerPeriodsBox");
             this.timerPeriodsBox.Name = "timerPeriodsBox";
             this.timerPeriodsBox.SelectedIndexChanged += new System.EventHandler(this.timerPeriodsBox_SelectedIndexChanged);
             // 
@@ -252,22 +241,74 @@
             resources.ApplyResources(this.openMelodyDialog, "openMelodyDialog");
             this.openMelodyDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openMelodyDialog_FileOk);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Menu;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileTab,
+            this.languageTab});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // fileTab
+            // 
+            this.fileTab.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.importButton,
+            this.exportButton});
+            this.fileTab.Name = "fileTab";
+            resources.ApplyResources(this.fileTab, "fileTab");
+            // 
+            // importButton
+            // 
+            this.importButton.Name = "importButton";
+            resources.ApplyResources(this.importButton, "importButton");
+            this.importButton.Click += new System.EventHandler(this.importButton_Click);
+            // 
+            // exportButton
+            // 
+            this.exportButton.Name = "exportButton";
+            resources.ApplyResources(this.exportButton, "exportButton");
+            this.exportButton.Click += new System.EventHandler(this.exportButton_Click);
+            // 
+            // languageTab
+            // 
+            this.languageTab.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rusLang,
+            this.enLang});
+            this.languageTab.Name = "languageTab";
+            resources.ApplyResources(this.languageTab, "languageTab");
+            // 
+            // rusLang
+            // 
+            this.rusLang.Name = "rusLang";
+            resources.ApplyResources(this.rusLang, "rusLang");
+            this.rusLang.Click += new System.EventHandler(this.rusLang_Click);
+            // 
+            // enLang
+            // 
+            this.enLang.Name = "enLang";
+            resources.ApplyResources(this.enLang, "enLang");
+            this.enLang.Click += new System.EventHandler(this.enLang_Click);
+            // 
             // PomodoroSetup
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.runTimerCount);
             this.Controls.Add(this.RBrepeatInfinitely);
             this.Controls.Add(this.RBrepeatN);
             this.Controls.Add(this.RBrunOnce);
-            this.Controls.Add(groupBox2);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.startButton);
             this.MaximizeBox = false;
             this.Name = "PomodoroSetup";
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timeNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.runTimerCount)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,14 +330,20 @@
         private System.Windows.Forms.RadioButton RBrepeatN;
         private System.Windows.Forms.RadioButton RBrepeatInfinitely;
         private System.Windows.Forms.NumericUpDown runTimerCount;
-        private System.Windows.Forms.Button exportButton;
-        private System.Windows.Forms.Button importButton;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button importMusicButton;
         private System.Windows.Forms.OpenFileDialog openMelodyDialog;
         private System.Windows.Forms.Label labelMelody;
         private System.Windows.Forms.TextBox melodyPathTextBox;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileTab;
+        private System.Windows.Forms.ToolStripMenuItem importButton;
+        private System.Windows.Forms.ToolStripMenuItem exportButton;
+        private System.Windows.Forms.ToolStripMenuItem languageTab;
+        private System.Windows.Forms.ToolStripMenuItem rusLang;
+        private System.Windows.Forms.ToolStripMenuItem enLang;
     }
 }
 

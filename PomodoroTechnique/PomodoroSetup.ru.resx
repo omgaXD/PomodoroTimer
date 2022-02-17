@@ -405,4 +405,13 @@
         6Qb9C//////9BAAv//////0E/////////AP////////9Jf////8=
 </value>
   </data>
+  <data name="defRestString" xml:space="preserve">
+    <value>Отдых</value>
+  </data>
+  <data name="defWorkString" xml:space="preserve">
+    <value>Работа</value>
+  </data>
+  <data name="minIndString" xml:space="preserve">
+    <value>мин.</value>
+  </data>
 </root>

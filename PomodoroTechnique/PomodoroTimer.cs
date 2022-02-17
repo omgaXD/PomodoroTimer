@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Globalization;
 using System.Linq;
 using System.Media;
 using System.Windows.Forms;
@@ -19,7 +21,7 @@ namespace PomodoroTechnique
 
         Activity curActivity;
         SoundManager melody;
-        public PomodoroTimer(List<Activity> activities, int repeat, SoundManager melody)
+        public PomodoroTimer(List<Activity> activities, int repeat, SoundManager melody, string lang)
         {
 
             this.activities = activities;
@@ -27,6 +29,7 @@ namespace PomodoroTechnique
             repeatTimes = repeat;
             this.melody = melody;
             InitializeComponent();
+            ChangeLanguage(lang);
             pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             SetupTimer();
 
@@ -81,7 +84,16 @@ namespace PomodoroTechnique
             }
             
         }
+        private void ChangeLanguage(string lang)
+        {
 
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(PomodoroTimer));
+            CultureInfo cultureInfo = new CultureInfo(lang);
+            foreach (Control c in this.Controls)
+            {
+                resources.ApplyResources(c, c.Name, cultureInfo);
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             button1.Enabled = false;
