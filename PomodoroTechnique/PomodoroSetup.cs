@@ -24,7 +24,7 @@ namespace PomodoroTechnique
         string defRestString = "Отдых";
         string minIndString = "мин.";
         string byDefault = "По умолчанию";
-        bool changedActivity = false; // E
+        bool changedActivity = false; // E E E E E
         private void ChangeLanguage(string lang)
         {
             this.lang = lang;
