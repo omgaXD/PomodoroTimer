@@ -117,16 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;exitButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 225</value>
+  <data name="activityLabel.Text" xml:space="preserve">
+    <value>Отдых</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>249, 385</value>
   </data>
@@ -136,18 +136,14 @@
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
-  <data name="activityLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 46</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PomodoroTimer</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
   </data>
-  <data name="activityLabel.Text" xml:space="preserve">
-    <value>Отдых</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="exitButton.Text" xml:space="preserve">
     <value>Завершить таймер</value>
@@ -161,20 +157,21 @@
   <data name="activityLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 25pt, style=Bold</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>265, 424</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>PomodoroTimer</value>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Продолжить</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>PomodoroTimer</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="timerLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 288</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 225</value>
+  </data>
+  <data name="activityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-8, 286</value>
   </data>
   <data name="&gt;&gt;activityLabel.Name" xml:space="preserve">
     <value>activityLabel</value>
@@ -183,9 +180,6 @@
     <value>4</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="exitButton.Size" type="System.Drawing.Size, System.Drawing">
@@ -230,9 +224,6 @@
   <data name="&gt;&gt;timerLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="timerLabel.Text" xml:space="preserve">
     <value>00:00:00</value>
   </data>
@@ -251,23 +242,26 @@
   <data name="activityLabel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="activityLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 46</value>
+  </data>
   <data name="timerLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 46</value>
   </data>
   <data name="&gt;&gt;exitButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button1.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="activityLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="exitButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>265, 424</value>
   </data>
   <data name="&gt;&gt;exitButton.Name" xml:space="preserve">
     <value>exitButton</value>
@@ -275,11 +269,11 @@
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
   </data>
+  <data name="button1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;timerLabel.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Продолжить</value>
   </data>
   <data name="&gt;&gt;activityLabel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -294,14 +288,20 @@
   <data name="timerLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 240</value>
   </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 288</value>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
+  <data name="activityLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="activityLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-8, 286</value>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="exitButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

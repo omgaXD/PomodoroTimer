@@ -118,6 +118,9 @@
     <EmbeddedResource Include="PomodoroTimer.resx">
       <DependentUpon>PomodoroTimer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PomodoroTimer.ru.resx">
+      <DependentUpon>PomodoroTimer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
